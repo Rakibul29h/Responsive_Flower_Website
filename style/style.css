@@ -22,7 +22,7 @@ body {
 
 .title {
   font-family: "Noto Serif", serif;
-  font-size: 3.125 rem;
+  font-size: 3.125rem;
   color: #000000;
   font-weight: bold;
 }
@@ -59,7 +59,7 @@ nav {
   text-decoration: none;
   color: #8987a1;
 }
-#home{
+#home {
   font-weight: bold;
   color: #000000;
 }
@@ -79,7 +79,7 @@ nav {
   align-items: end;
   margin-top: 220px;
 }
-.banner_content{
+.banner_content {
   width: 50%;
 }
 .banner_title {
@@ -87,11 +87,32 @@ nav {
   font-weight: bold;
   font-family: var(--nato);
 }
-.banner_img{
+.banner_img {
   width: 50%;
 }
-.banner_img img{
+.banner_img img {
   width: 100%;
+}
+
+/* main section  */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* plant section styling */
+.plant {
+  margin-top: 130px;
+}
+.plant_content {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+.plant_content p {
+  width: 75%;
+  margin: 0 auto;
 }
 
 /* mobile responsive */
@@ -114,26 +135,35 @@ nav {
   }
   .banner_img {
     order: 1;
-    
   }
-.banner_title {
-  font-size: 1.5rem;
-  margin-bottom: 13px;
-}
-.banner_content{
-    margin: 28px 16px 13px;
-}
-.des{
-  font-size: 0.9rem;
-}
-.banner_content{
-  width: 100%;
-}
+  .banner_title {
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+  }
+  .banner_content {
+    width: 100%;
+    padding: 0px 17px;
+  }
+  .des{
+    font-size: 0.9rem;
+  }
 
-.banner_img{
-  width: 100%;
-}
-.cart_link{
-  justify-content: end;
-}
+  .banner_img {
+    width: 100%;
+  }
+  .cart_link {
+    justify-content: end;
+  }
+  main {
+    padding: 0 17px;
+  }
+  .plant {
+    margin-top: 65px;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .plant_content p {
+    width: 100%;
+  }
 }
