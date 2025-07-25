@@ -141,12 +141,15 @@ main {
   font-weight: bold;
 }
 .btn {
-  width: 100%;
   background-color: #e95a08;
   border: none;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   padding: 19px;
+}
+.card .btn{
+  width: 100%;
+  margin-top: 30px;
 }
 /* plant lover section */
 .plant_lover {
@@ -235,9 +238,44 @@ main {
   font-size: 1.75rem;
   margin-top: 15px;
 }
+/* subscribe section */
+.subscribe{
+ width: 100%;
+ background-image: url(../assets/news-letter-bg.png);
+ height: 500px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
 
-
-
+}
+.content{
+  height: 100%;
+  max-width:1000px;
+  margin: 0 auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.form{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.form input{
+  padding:19px ;
+  width: 83%;
+  border: none;
+  outline: none;
+}
+.form .btn{
+  width: 17%;
+  margin-left: -5px;
+}
+.content .title{
+  color:  white;
+}
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
@@ -331,6 +369,17 @@ margin-bottom: 40px;
 .big_card .small_show_link{
   font-size: 1rem;
 }
-
-
+.subscribe{
+  height: 275px;
+}
+.form .btn{
+  width: 23%;
+  padding: 19px 12px;
+}
+.form input{
+  padding:19px ;
+  width: 77%;
+  border: none;
+  outline: none;
+}
 }
