@@ -149,34 +149,32 @@ main {
   padding: 19px;
 }
 /* plant lover section */
-.plant_lover{
+.plant_lover {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
 }
-.plant_img{
+.plant_img {
   width: 50%;
   position: relative;
 }
-.flower_store{
+.flower_store {
   width: 100%;
   object-fit: cover;
 }
-.sticker{
+.sticker {
   top: -126px;
   right: -92px;
   position: absolute;
   width: 286px;
 }
-.plant_container{
+.plant_container {
   width: 50%;
 }
-.plant_container ul li{
+.plant_container ul li {
   margin: 20px 25px;
 }
-
-
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
@@ -239,5 +237,18 @@ main {
 
   .card_price {
     font-size: 1rem;
+  }
+  .plant_lover {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .sticker {
+    display: none;
+  }
+  .plant_img {
+    width: 100%;
+  }
+  .plant_container {
+    width: 100%;
   }
 }
