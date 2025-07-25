@@ -114,6 +114,69 @@ main {
   width: 75%;
   margin: 0 auto;
 }
+/* card design */
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-bottom: 200px;
+}
+.card {
+  text-align: center;
+}
+.card img {
+  width: 100%;
+}
+
+.card_title {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.card_price {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.btn {
+  width: 100%;
+  background-color: #e95a08;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 19px;
+}
+/* plant lover section */
+.plant_lover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.plant_img{
+  width: 50%;
+  position: relative;
+}
+.flower_store{
+  width: 100%;
+  object-fit: cover;
+}
+.sticker{
+  top: -126px;
+  right: -92px;
+  position: absolute;
+  width: 286px;
+}
+.plant_container{
+  width: 50%;
+}
+.plant_container ul li{
+  margin: 20px 25px;
+}
+
+
 
 /* mobile responsive */
 @media screen and (max-width: 576px) {
@@ -144,7 +207,7 @@ main {
     width: 100%;
     padding: 0px 17px;
   }
-  .des{
+  .des {
     font-size: 0.9rem;
   }
 
@@ -165,5 +228,16 @@ main {
   }
   .plant_content p {
     width: 100%;
+  }
+  .card_container {
+    margin-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card_title {
+    font-size: 1rem;
+  }
+
+  .card_price {
+    font-size: 1rem;
   }
 }
